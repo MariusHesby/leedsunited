@@ -1,0 +1,40 @@
+@media screen and (max-width: 720px) {
+  .blog-wrapper {
+    grid-template-columns: 1fr;
+  }
+  /* LATEST MATCH RESULTS */
+  #updatedResults {
+    padding: 30px 0 30px 0;
+    margin-bottom: 50px;
+  }
+  .homeTeam img {
+    height: 90px;
+  }
+  .awayTeam img {
+    height: 90px;
+  }
+  .fulltime {
+    padding: 0 4%;
+  }
+  .result {
+    font-size: 2em;
+  }
+  /* CAROUSEL */
+  .flex {
+    max-width: 300px;
+  }
+  .home-content {
+    margin: 0 auto 50px auto;
+  }
+  .slider {
+    display: flex;
+    height: 100%;
+    width: 400%;
+  }
+  .slider section {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}

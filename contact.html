@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Change this on every page -->
+    <title>Feel free to contact me here if there is anything you would like to share!</title>
+    <meta name="description" content="Contact form to get in touch with Gord Rostøl - the man behind the blog" />
+    <!---->
+    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+    <link href="data:;base64," rel="icon" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/style-992.css" rel="stylesheet" media="screen and (min-width: 992px)" />
+    <link href="styles/style-720.css" rel="stylesheet" media="screen and (max-width: 720px)" />
+    <link href="styles/style-320.css" rel="stylesheet" media="screen and (max-width: 820px)" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
+    <script src="js/components/hamburger.js" defer></script>
+    <script defer src="js/contact.js"></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- Header -->
+      <header>
+        <a href="index.html" id="logo">
+          <span>L</span>eeds <span>U</span>nited
+          <div class="border"></div>
+        </a>
+        <nav>
+          <div class="openMenu"><i class="fa fa-bars"></i></div>
+          <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main -->
+      <main>
+        <h1>Feel free to contact me here if there is anything you would like to share!</h1>
+
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="message"></div>
+            <form id="contactForm">
+              <div>
+                <label>
+                  Full name (6 characters or more)
+                  <input name="fullName" id="fullName" placeholder="full name" />
+                </label>
+                <div class="formError" id="fullNameError">Name must be at least 6 characters</div>
+              </div>
+
+              <div>
+                <label>
+                  Email
+                  <input name="email" id="email" placeholder="e-mail" />
+                </label>
+                <div class="formError" id="emailError">Please enter a valid e-mail</div>
+              </div>
+
+              <div>
+                <label>
+                  Subject (minimum 16 characters)
+                  <input name="subject" id="subject" placeholder="subject" />
+                </label>
+                <div class="formError" id="subjectError">Subject must be at least 16 characters</div>
+              </div>
+              <div>
+                <label for="text-area"> Message (minimum 26 characters) </label>
+                <textarea name="message" id="message" placeholder="message" rows="8"> </textarea>
+
+                <div class="formError" id="messageError">Message must be at least 26 characters</div>
+              </div>
+
+              <div class="button">
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>© Copyright 2021 || Gord Rostøl</p>
+      </footer>
+      <!-- The End -->
+    </div>
+  </body>
+</html>
